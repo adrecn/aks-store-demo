@@ -24,7 +24,7 @@ jobs:
       
       - name: Build Docker Image
         run: |
-          docker build -t adrecn/storedemo:latest .
+          docker build -t adrecn/storedemo:latest -f src/virtual-worker/Dockerfile src/virtual-worker
 
       - name: Push Docker image
         run: |
